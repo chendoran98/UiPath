@@ -1,0 +1,114 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TouTube_Comment" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="671.3333333333334,887.3333333333334" sap2010:WorkflowViewState.IdRef="TouTube_Comment_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="54">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.MicrosoftOffice365.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="YouTube_Comment" sap:VirtualizedContainerService.HintSize="476,824" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="strURL">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">https://www.youtube.com/watch?v=sp5ZwFKfh-0</Literal>
+        </Variable.Default>
+      </Variable>
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Use Browser Chrome: UiPath Beginners Course [2021] - How to Learn RPA - YouTube" sap:VirtualizedContainerService.HintSize="434,732" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="79b876ea-1b7f-4cc3-9de2-193e29a141f5" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,514" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'DIV contenteditable-root'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,221.33333333333334" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="79b876ea-1b7f-4cc3-9de2-193e29a141f5" Text="Automated Comment: Hi Anders, Thanks a lot for this awesome tutorial! &#xD;&#xA;I do enjoy doing these small tasks. Appreciating your initiative &#xD;&#xA;and all efforts that has been put in to create this professional tutorial." Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.youtube.com/watch?v=sp5ZwFKfh-0" DesignTimeRectangle="244, 490, 852, 30" FriendlyName="'DIV contenteditable-root'" FullSelectorArgument="&lt;webctrl id='contenteditable-root' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='contenteditable-root' tag='DIV' type='' class='style-scope yt-formatted-string' aaname='' /&gt;" Guid="e6da6e3b-ab2a-4f07-b01a-69a46cabe497" ImageBase64="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" InformativeScreenshot="714181b6d0b0044689b8f3ab065b943a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Beginners Course [2021] - How to Learn RPA - YouTube' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Comment'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="79b876ea-1b7f-4cc3-9de2-193e29a141f5" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.youtube.com/watch?v=sp5ZwFKfh-0&amp;t=5130s" DesignTimeRectangle="938, 537, 157, 55" FriendlyName="'Comment'" FullSelectorArgument="&lt;webctrl id='button' parentid='submit-button' tag='TP-YT-PAPER-BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='button' parentid='submit-button' tag='TP-YT-PAPER-BUTTON' type='' class='style-scope ytd-button-renderer style-primary size-default' aaname='' check:innerText='COMMENT' /&gt;" Guid="d877552a-4479-45fa-92f8-6730a5bee652" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKEAAAA7CAYAAAATrOqTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAVrSURBVHhe7Z1PSFtJHMcX3kkKEh4iotJAbAnippK6Zk0UQRBPpRQqgcWyt4AggUWQhUWhCKGXlULpshTSSC8ePfbo1aM3j1495rLg8bcz783Mm3lvXvLs+jIL/R4+NH3z5+XNfGZ+M/MC/jA1NUUAuAQSAucYEj7bO6W1039o/YwAyA3uGHctISG/aCsAQF5IEZWEmAHBqOHOGRLaMgGQN5AQOAcSAudAQuAcSAicAwmBcyAhcA4kBM6BhMA5kBA4BxIC50BC4BxICJwDCYFzICFwDiQEzoGEwDkOJexT7fe/aLa+So88jzzGWHGTppvntNy15dfoXtNCs0V+cSYo53lPqLBxQOXDW3t+RrUZ3iPg+WeqWfJE3FD5uZa/eWmkr7S3ozT/iBa/6GXj3NHiK/k9GfUzWtHSjbpS2ab5j1GZ6FlWae5ddN3guJMom+1eEaXjWJ054UbC3hXN/aR1TBx/kzXAnbXsGmtc37eUETzaOLcKZkjoLaV3Huf9Z/K1OgdKyJje7xvpBl8u6LGW92ElZKQNKEg4iD5VtqSAqzS7e0m1bp8ajJU/z6lYEWl+myqfYmU/nNGUFLDcpvLxTVCu8fc1VXa21YxaYNKs6eUYpoQeje9cGek6SztLRt5hEnpM/IaWrtPYb5l5UyU0RRtE/Fkm926S+SwSJrmkkqwn9oyjZPQSvjuh8eDBZ2j2wDKDfDqnadEwE7t642phzT+gxZ5WRlDbkx36gsrvzTTVcaWl8P6pYZTN0iWel+UL/mWkSSjrstwvpE8LG2Ed4yxvUCYHCT3/DS3Ey0LCdKpNIVLphJYs6etnt7SwLhpm/TzqsO5XmhUN5rcsI5/DQl9RzJTjv5ozneq45omQbIaKh8mQv3Z4RGM8H/t+c69lmRQJ6yzPVpjHHDACFtYneD6vRXNspg7LPKSEq1Qoh5/Htr6aszEkTOOG5n8WD/3yIhEyFb0wPDe6miSqUWeo1NHyGvBQL+rXBWaojmPXq7svws+JMMpm25dhPi5VdZiEfocWNWnjg6rW2gzyjb26oGU5Sz+ohOz+nQ4Vgs8z9PgPW3tBwhjf/tArv73J0KhaB8WkUNe5BB/PaDKoq0UL+rpTLQV4eL2l+bookyYhk6DKnymYfeObHRnWwxnXuL+1rnTiGwRdwiobONXXItSXjqgqlymQMI3/IGHGGcPsIMv1QIJoraaHUbWJCGbIrBJGGxk+46nZXa59xWDIT0J2rcd24GIZUvjlKvwOkDCN/8lMyP6v1n7qiCM6GwzDWnYJ1dpPbXaiTZRcvw6XcPBz6SQkZDQO2uHzyLNDSJhGxjWhjYdaE0o51SZGhNGESFkkbFMlOFiPBA7ODFXd0a45bwnDDZ3Y9PGB9RYSpjJ8d5wi0kPtjrWOk2GUnxnqn8My6R1kE0cP5ctGWOfpmtC5Scj4INe6Hk3Ws9T7nUqowmB8NyfJ+5xQ7zi5bvNXqSDOBqPNxf0kjAZJdGwSvUkZkYSMWkvs/BWQ0IIWNvxNKu5f00r3jtZ6o3pjondc7B2x8QrsnhLqg4RjHIaPTsJgVy4GwfB6v1sJGT328FI2G7m+OzY7Tn+tNtnWfwBxXwkZ6m0Q2ykbZbJIOBh9hzxYQtZG6uyQAwkH0Gdrpw5NV34U4ZkJVN6m2Z2Mv6LZadOE/iuaepueZvoVTazjVPiPnRl+i4TaKz/zzHC0EvJZWZ0dQkIAhgMJgXMgIXAOJATOgYTAOZAQOAcSAudAQuAcSAicAwmBcyAhcA4kBM6BhMA5kBA4BxIC50BC4BxICJxjSIi//A5GTeIvvz/bO7VmBCAvuHOGhFJEzIggb7hjUsCEhAC4ABICx0zRv8FTXm/4Jn8TAAAAAElFTkSuQmCC" InformativeScreenshot="416c9ab3fcc2e7978780d9524960f3c9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='UiPath Beginners Course [2021] - How to Learn RPA - YouTube' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAACp0lEQVRYR8XXz0tUURQH8K8/8hZiYfmDmqgLuQhrE+1diLRxldAfEIQQBBJIIkHQKqpFG0FIEVsFQlGJRokEgqFgmo7m2GCvH8yEjDkkIaLl6XsfDoGc12g4rwufWZxz7j2H92OYgYj8V2owTGowTGowTFhdXfWt0Dda2JTe9J3kjzwq+It88mvXKXPGEmXOTdEPyvSFtRYROk6XrD3Tae3lfmvvxqztnrf26WdrBzesHRZr39AkzdI7hYtP0ziNrlg7xP0v6XHU2q4+a+/w7CtN1tactjbvMPu53v46CBQ/Abo3gF/+XcmxceDVSeCY37wQyBtgc60wl2LAUAlQhHPAWQZ+bi0Iw3mgFjeBJi0ZhnvAdTwE2rVkGHqBB3gNPNOSgcrLRVpbRUpL9fwOsPcA4sCwlgzkBlhfF4nHRRoa9Jpt+gSMg09jVEsGKisTSaX4Jba5enpEqqr02iySwJwbYE5LBto6gFvptEhzs0hRkb4nQAL4whEQ05KBtAEya2JCpL5e36f4CiTxYTeuQGa5K9HYqO9TLLgBduUWuNXRIRKJ6HsC8BYk3AAzWjLQ1gHGxkTq6vTaLDjAPN4DI1oykBtgbU1keVmkpUXEGL1uG/gWTGEM6NeSgSorRbq6RKqr9fwOsPcQeoBOLRkoP1+P/4NBsP1t4JqWDEM7cAsNQI2WDEMj2L4Y2DMJvNAKcolfQjNHAf4m4ToFRKb5QGiFucDXb7rWb8tljHEfqDCm8KoxFx4Z0zZiTF/CmJGkMbOLxnzkq5akFKVpOYslcrVJt9edwbNGeebzXmPu3zDm4gljSlxPv7fneb44vaUpilGCkp5XsOh5+8TzDtAhqqQjWVSQq93PvXvdGe4sd2aUXI85yvTlNdH/MIRFDYZJDYZJDYZH8BtrTS5QuubtDwAAAABJRU5ErkJggg==" InformativeScreenshot="157672377dbff4030fa9e57133a72a4f.png" Selector="&lt;html app='chrome.exe' title='UiPath Beginners Course [2021] - How to Learn RPA - YouTube' /&gt;" Url="[strURL]" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
